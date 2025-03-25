@@ -8,6 +8,7 @@ kubectl get replicasets
 kubectl apply -f .\sample_deployment.yaml
 kubectl delete -f .\sample_deployment.yaml
 kubectl apply -f .\sample_pod.yaml
+kubectl apply -f .\sample_rs.yaml
 kubectl get pods
 kubectl describe pods
 kubectl describe deploy my-deployment
