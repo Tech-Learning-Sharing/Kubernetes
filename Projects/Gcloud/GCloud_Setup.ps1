@@ -1,9 +1,9 @@
 # Variables (customize these)
 $projectId = "your-project-id"              # Replace with your Google Cloud project ID
-$clusterName = "my-gke-cluster"             # Name of your Kubernetes cluster
+$clusterName = "cluster-1"             # Name of your Kubernetes cluster
 $region = "us-central1-c"                     # Region for the cluster
 $machineType = "e2-standard-2"             # Machine type for nodes
-$numNodes = 3                              # Number of nodes
+$numNodes = 2                              # Number of nodes
 $keyFile = "C:\path\to\your\key.json"      # Path to your service account key file
 
 # Step 1: Authenticate with the service account
