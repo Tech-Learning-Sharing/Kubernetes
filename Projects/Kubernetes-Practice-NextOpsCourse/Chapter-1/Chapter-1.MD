@@ -15,6 +15,8 @@ kubectl get pods
 kubectl describe pods
 kubectl describe deploy my-deployment
 kubectl describe replicaset my-deployment-9b47c857
+kubectl delete pod my-deployment-9b47c857-b82mn
+kubectl get pods -w
 ```
 
 ![img.png](img.png)
@@ -28,3 +30,4 @@ kubectl describe replicaset my-deployment-9b47c857
 ![img_8.png](img_8.png)
 ![img_9.png](img_9.png)
 ![img_10.png](img_10.png)
+![img_11.png](img_11.png)
