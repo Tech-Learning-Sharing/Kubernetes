@@ -2,7 +2,7 @@
 $projectId = "playground-s-11-ae1dad93"              # Replace with your Google Cloud project ID
 $clusterName = "cluster-1"             # Name of your Kubernetes cluster
 $region = "us-central1-c"                     # Region for the cluster
-$machineType = "e2-standard-2"             # Machine type for nodes
+$machineType = "e2-micro"             # Machine type for nodes
 $numNodes = 2                              # Number of nodes
 $keyFile = ".\key.json"      # Path to your service account key file
 
