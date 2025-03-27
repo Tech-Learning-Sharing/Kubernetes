@@ -19,6 +19,8 @@ gcloud config set project $projectId
 
 # Step 3: Create the GKE cluster
 Write-Host "Creating GKE cluster: $clusterName..."
+gcloud services enable container.googleapis.com
+gcloud services list --enabled
 gcloud container clusters create $clusterName `
   --region=$region `
   --machine-type=$machineType `
