@@ -7,3 +7,4 @@ kubectl apply -f .
 kubectl get service
 ```
 
+![img.png](img.png)
