@@ -1,5 +1,5 @@
 # Variables (customize these)
-$projectId = "playground-s-11-ae1dad93"              # Replace with your Google Cloud project ID
+$projectId = "playground-s-11-421c9cb8"              # Replace with your Google Cloud project ID
 $clusterName = "cluster-1"             # Name of your Kubernetes cluster
 $region = "us-central1-c"                     # Region for the cluster
 $machineType = "e2-micro"             # Machine type for nodes
