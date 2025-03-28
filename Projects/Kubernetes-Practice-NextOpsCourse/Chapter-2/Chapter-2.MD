@@ -10,7 +10,7 @@ kubectl get service -o wide
 gcloud compute firewall-rules list
 kubectl get nodes -w -o wide
 #connect to pod using sh
-kubectl run -it --rm debug --image=busybox -- s
+kubectl run -it --rm debug --image=busybox -- sh
 ```
 
 ![img.png](img.png)
