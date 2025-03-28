@@ -8,6 +8,7 @@ kubectl get service
 kubectl get nodes -o wide
 kubectl get service -o wide
 gcloud compute firewall-rules list
+kubectl get nodes -w -o wide
 ```
 
 ![img.png](img.png)
