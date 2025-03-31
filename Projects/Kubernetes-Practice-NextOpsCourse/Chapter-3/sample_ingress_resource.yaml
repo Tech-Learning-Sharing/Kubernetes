@@ -16,3 +16,19 @@ spec:
             backend:
               service:
                 name: my-app-nginx
+                port:
+                  number: 80
+          - path: /httpd(/|$)(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app-apache
+                port:
+                  number: 80
+          - path: /(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app-nginx
+                port:
+                  number: 80
