@@ -9,6 +9,8 @@ kubectl get nodes -o wide
 kubectl get service -o wide
 gcloud compute firewall-rules list
 kubectl get nodes -w -o wide
+#enable firewall rules 
+
 #connect to pod using sh
 kubectl run -it --rm debug --image=busybox -- sh
 ```
