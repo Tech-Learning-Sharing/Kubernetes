@@ -14,7 +14,10 @@ spec:
     spec:
       containers:
         - name: my-app-apache
-          image: nginx:latest
+          image: httpd:latest
           ports:
             - containerPort: 80
+          env:
+            - name: TITLE
+              value: "APACHE APP"
 ---
