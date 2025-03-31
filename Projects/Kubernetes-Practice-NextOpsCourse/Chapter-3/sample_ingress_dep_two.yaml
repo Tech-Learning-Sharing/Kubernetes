@@ -21,3 +21,13 @@ spec:
             - name: TITLE
               value: "APACHE APP"
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-apache
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+  selector:
+    app: my-app-apache
