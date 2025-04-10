@@ -10,7 +10,10 @@ kubectl delete -A ValidatingWebhookConfiguration ingress-nginx-admission
 kubectl apply -f sample_ingress_dep_one.yaml
 kubectl apply -f sample_ingress_dep_two.yaml
 kubectl apply -f sample_ingress_resource.yaml
-
+kubectl get service -n ingress-nginx
+curl http://10.104.15.130:80
+curl http://10.104.15.130:80/nginx
+curl http://10.104.15.130:80/httpd
 
 ```
 
