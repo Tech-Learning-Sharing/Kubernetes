@@ -4,4 +4,5 @@
 
 ```powershell
 .\minikube.exe tunnel
+.\minikube.exe service mongo-express-service --url
 ```
