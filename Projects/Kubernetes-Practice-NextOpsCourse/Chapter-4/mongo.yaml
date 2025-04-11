@@ -5,7 +5,7 @@ metadata:
   labels:
     app: mongodb
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mongodb
@@ -24,12 +24,12 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: mongodb-secret
-                  key: mongo-root-username
+                  key: mongodb-root-username
             - name: MONGO_INITDB_ROOT_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: mongodb-secret
-                  key: mongo-root-password
+                  key: mongodb-root-password
 ---
 apiVersion: v1
 kind: Service
@@ -42,3 +42,5 @@ spec:
     - protocol: TCP
       port: 27017
       targetPort: 27017
+
+
