@@ -11,9 +11,9 @@ kubectl apply -f sample_ingress_dep_one.yaml
 kubectl apply -f sample_ingress_dep_two.yaml
 kubectl apply -f sample_ingress_resource.yaml
 kubectl get service -n ingress-nginx
-curl http://10.104.15.130:80
-curl http://10.104.15.130:80/nginx
-curl http://10.104.15.130:80/httpd
+curl http://10.106.144.114:80
+curl http://10.106.144.114:80/nginx
+curl http://10.106.144.114:80/httpd
 
 ```
 
