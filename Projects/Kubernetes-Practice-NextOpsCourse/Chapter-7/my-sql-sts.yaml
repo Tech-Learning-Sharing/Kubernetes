@@ -31,3 +31,17 @@ spec:
             - name: mysql-config
               mountPath: /etc/mysql/conf.d
               readOnly: true
+      volumes:
+        - name: mysql-config
+          configMap:
+            name: mysql-config
+  volumeClaimTemplates:
+    - metadata:
+        name: data-volume
+      spec:
+        storageClassName: gcp-storage-class
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 5Gi
